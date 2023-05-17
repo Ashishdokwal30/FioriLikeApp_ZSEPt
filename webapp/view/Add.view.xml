@@ -1,0 +1,73 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" 
+    	  xmlns="sap.m"
+	      xmlns:l="sap.ui.layout"
+	      xmlns:f="sap.ui.layout.form"
+          controllerName="com.sotec.nnt.jsd.controller.Add">
+ <Page title="Add New Product">
+  	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Product_Details"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Product_ID" />
+				<Input id="prodId" value="{prod>/nProdData/PRODUCT_ID}" submit="onEnter"/>
+				<Button icon="sap-icon://synchronize" tooltip="Load Most expensive product" press="onExpensive"></Button>
+				<Label text="Name/Description" />
+				<Input value="{prod>/nProdData/NAME}">
+				</Input>
+				<Input value="{prod>/nProdData/DESCRIPTION}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Label text="Supplier Name/ID" />
+                <Input value="{prod>/nProdData/SUPPLIER_NAME}">
+				</Input>
+				<Input value="{prod>/nProdData/SUPPLIER_ID}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+        		<Label text="Price/Currency" />
+				<Input value="{prod>/nProdData/PRICE}">
+				</Input>
+				<Input value="{prod>/nProdData/CURRENCY_CODE}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Label text="Category" />
+				<Select id="idCategory" selectedKey="{prod>/nProdData/CATEGORY}">
+					<items>
+						<core:Item text="Notebooks" key="Notebooks"/>
+						<core:Item text="Projectors" key="Projectors"/>
+						<core:Item text="Mice" key="Mice"/>
+					</items>
+				</Select>
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+    <footer>
+     <Toolbar>
+      <ToolbarSpacer/>
+      <Button id="idSave" text="Save" press="onSave" type="Accept"></Button>
+      <Button id="idDelete" text="Delete" press="onDelete" type="Reject"></Button>
+      <Button text="Clear" press="onClear" type="Emphasized"></Button>
+     </Toolbar>
+    </footer>
+ </Page>
+</mvc:View>

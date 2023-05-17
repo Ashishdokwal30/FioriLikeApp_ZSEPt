@@ -1,0 +1,36 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"  xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"  xmlns:viz.data="sap.viz.ui5.data"  controllerName="com.sotec.nnt.jsd.controller.View3">
+	<Page title="The Supplier Data" showNavButton="true" navButtonPress="onBack">
+	  <ObjectHeader title="{fruits>name}" titleActive="true" titlePress="onTitlePress" intro="Since {fruits>sinceWhen}" number="{fruits>contactNo}" numberUnit="{fruits>contactPerson}" icon="sap-icon://supplier" >
+	   	<ObjectAttribute text="{fruits>city}" />
+	  </ObjectHeader>
+	  <Select id="idChartType" selectedkey="{fruits>/chartType}" change="onSelectChart">
+	    <items>
+		   <core:Item key="pie" text="pie"></core:Item>
+		   <core:Item key="column" text="column"></core:Item>
+		   <core:Item key="line" text="line"></core:Item>
+		</items>
+	  </Select>
+            <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+                height='100%' width="100%" vizType='pie'>
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{fruits>suppFruits}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="Name"
+                                value="{fruits>name}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition name="quantity"
+                                value="{fruits>quantity}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem uid="size" text="{fruits>name}" type="Measure"
+                        values="quantity" />
+                    <viz.feeds:FeedItem uid="color" text="{fruits>quantity}" type="Dimension"
+                        values="Name" />
+                </viz:feeds>
+            </viz:VizFrame>
+	</Page>
+</mvc:View>

@@ -1,0 +1,73 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="com.sotec.nnt.jsd.controller.View1">
+	<Page title="Product Management">
+		<content>
+			<SearchField id="idSearchView1" search="onSearch"></SearchField>
+			<!-- here we have many selectione mode which are singleSelect Mode, singleSelectleft Mode, singleSelectMaster Mode, MultiSelect Mode, Delete Mode -->
+			<List id="idListView1" items="{/ProductSet}" selectionChange="onSelectItem" mode="SingleSelectMaster" growing="true" growingThreshold="10">
+				<!-- delete="onDelete" -->
+				<headerToolbar>
+					<Toolbar>
+						<ToolbarSpacer />
+						<Button icon="sap-icon://delete" press="onDeleteItem" tooltip="Delete Selected Items"></Button>
+					</Toolbar>
+				</headerToolbar>
+				<items>
+					<ObjectListItem title="{PRODUCT_ID}" intro="{CATEGORY}" number="{PRICE}" numberUnit="{CURRENCY_CODE}" icon="sap-icon://product">
+						<firstStatus>
+							<ObjectStatus text="{SUPPLIER_NAME}" state="{path: 'status', formatter: '.baseFormatter.getStatusColor'}"></ObjectStatus>
+						</firstStatus>
+					</ObjectListItem>
+				</items>
+			</List>
+			<!-- <Button text = "Go To View2" press="onNext"></Button> -->
+		</content>
+		<footer>
+		  <Toolbar>
+		    <ToolbarSpacer/>
+			<Button icon="sap-icon://add" text="Add New" press="onAdd" tooltip="Add New Product"></Button>
+		  </Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
+<!--
+DisplayListItem it is use to display data on right nd left corner
+<DisplayListItem label="Apple" value="Its  worlds best antibiotic. AN APPLES A DAY KEEP DOCTOR AWAY "></DisplayListItem>
+
+
+StandardListItem it is use to display data on top and bottom with icon
+<StandardListItem  title ="Banana" icon="https://c.ndtvimg.com/2019-04/dl9g6gn8_bananas_625x300_11_April_19.jpg" description="Good Source of Caobohydrats and give instant energy" ></StandardListItem>
+InputListItem it use to display the input string and also editable data inside the list
+<InputListItem>
+<HBox>
+<Text text="Tell US your favorite Fruit"></Text>
+<Input width='40%'></Input>
+</HBox>
+</InputListItem>
+
+CustomListItem it is use to when none of list item serve purpose
+<CustomListItem>
+<HBox>
+<Text class="sapUiTinyMarginTop" text="DO you want Cash on Delivery"></Text>
+<Switch></Switch>
+</HBox>
+</CustomListItem>
+
+ObjectListItem it is use to display bussiness like object
+firstStatus it is a aggregation of objectlistitem in which we can give a avalibility highlight
+attributes it is use to display additional information about the bussines object
+<ObjectListItem title="Dragon Fruit" intro="It's rich in antioxidants like flavonoids, phenolic acid, and betacyanin..." number="450" numberUnit="P/Kg" icon="https://cdn.shopify.com/s/files/1/0586/7303/7499/products/DragonFruit1pc.jpg?v=1660188898">
+
+<firstStatus>
+<ObjectStatus text="Available" state="Success"></ObjectStatus>
+</firstStatus>
+<attributes>
+<ObjectAttribute title="Ingridents" text="It Contains natural Salt"></ObjectAttribute>
+</attributes>
+</ObjectListItem>
+
+FeedListItem it is use to display like a social media message
+<FeedListItem sender="PM Modi" text="Happy Birthday Ashish Dokwal" timestamp="08 September 2022" info="Brithday Wishing" icon="https://upload.wikimedia.org/wikipedia/commons/c/c0/Official_Photograph_of_Prime_Minister_Narendra_Modi_Potrait.png"></FeedListItem>
+
+ActionListItem it is use to make a clickable action
+<ActionListItem text="Buy Now" press="onOrder"></ActionListItem>
+-->

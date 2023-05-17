@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="com.sotec.nnt.jsd.controller.View2">
+	<Page title="{PRODUCT_ID} - {CATEGORY}" showNavButton="true" navButtonPress="onBack">
+		<headerContent>
+			<!-- <Button icon ="sap-icon://arrow-left" press="onBack"></Button> -->
+		</headerContent>
+		<content>
+			<ObjectHeader title="{NAME}" intro="{CATEGORY}" number="{PRICE}" numberUnit="{CURRENCY_CODE}" icon="sap-icon://product">
+				<firstStatus>
+					<ObjectStatus text="{status}" state="{path: 'status', formatter: '.baseFormatter.getStatusColor'}">
+					</ObjectStatus>
+				</firstStatus>
+			</ObjectHeader>
+			<IconTabBar>
+				<items>
+					<IconTabFilter icon="sap-icon://developer-settings" text="More Info">
+						<core:Fragment fragmentName="com.sotec.nnt.jsd.Fragments.MoreInfo" type="XML"></core:Fragment>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://supplier" text="Supplier">
+						<core:Fragment fragmentName="com.sotec.nnt.jsd.Fragments.supplierTab" type="XML"></core:Fragment>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://home" text="Cities">
+						<core:Fragment fragmentName="com.sotec.nnt.jsd.Fragments.cities" type="XML"></core:Fragment>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button text="Save" type="Accept" press="onSave">
+				</Button>
+				<Button text="Cancle" type="Reject" press="onCancle">
+				</Button>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

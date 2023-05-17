@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="https://ui5.sap.com/resources/sap-ui-core.js" 
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_horizon" 
+        data-sap-ui-resourceroots='{"com.sotec.nnt.jsd" : "./"}' 
+        data-sap-ui-bindingSyntax="Complex"> //------------when there we can't able to use {Path : /empStr/empName} then we use this syntex.
+    </script>
+    <script>
+
+        var oComp = new sap.ui.core.ComponentContainer({
+              name : 'com.sotec.nnt.jsd'
+              
+        });
+        
+        oComp.placeAt("content");
+    </script>
+</head>
+
+<body>
+  <div id="content"></div>
+</body>
+
+</html>

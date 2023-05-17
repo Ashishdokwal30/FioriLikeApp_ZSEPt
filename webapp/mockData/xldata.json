@@ -1,0 +1,282 @@
+{
+    "P1": {
+        "data": "Q1",
+        "value": "₹ 77,618.26",
+        "label": "Total A + B :",
+        "dbField": "totalA+B",
+        "group": "",
+        "groupCell": ""
+    },
+    "P2": {
+        "data": "Q2",
+        "value": "₹ 0.00",
+        "label": "Profit :",
+        "dbField": "profit",
+        "group": "",
+        "groupCell": ""
+    },
+    "P3": {
+        "data": "Q3",
+        "value": "₹ 0.00",
+        "label": "Miscellaneous :",
+        "dbField": "miscellaneous",
+        "group": "",
+        "groupCell": ""
+    },
+    "P4": {
+        "data": "Q4",
+        "value": "₹ 77,618.26",
+        "label": "Total Cost of Job :",
+        "dbField": "totalCostOfJob",
+        "group": "",
+        "groupCell": ""
+    },
+    "P5": {
+        "data": "Q5",
+        "value": "₹ 1.94",
+        "label": "Cost per Pc :",
+        "dbField": "costPerPc",
+        "group": "",
+        "groupCell": ""
+    },
+    "P8": {
+        "data": "Q8",
+        "value": "Old :",
+        "label": "Plate :",
+        "dbField": "plate",
+        "group": "Ancillary Parts",
+        "groupCell": "P7"
+    },
+    "P9": {
+        "data": "Q9",
+        "value": "None :",
+        "label": "Pantone Inks :",
+        "dbField": "pantoneInks",
+        "group": "Ancillary Parts",
+        "groupCell": "P7"
+    },
+    "P10": {
+        "data": "Q10",
+        "value": "None :",
+        "label": "Foil Blocks :",
+        "dbField": "foilBlocks",
+        "group": "Ancillary Parts",
+        "groupCell": "P7"
+    },
+    "P11": {
+        "data": "Q11",
+        "value": "None :",
+        "label": "Positive :",
+        "dbField": "positive",
+        "group": "Ancillary Parts",
+        "groupCell": "P7"
+    },
+    "P12": {
+        "data": "Q12",
+        "value": "None :",
+        "label": "Emboss Block :",
+        "dbField": "embossBlock",
+        "group": "Ancillary Parts",
+        "groupCell": "P7"
+    },
+    "P13": {
+        "data": "Q13",
+        "value": "Old :",
+        "label": "Punch :",
+        "dbField": "punch",
+        "group": "Ancillary Parts",
+        "groupCell": "P7"
+    },
+    "P14": {
+        "data": "Q14",
+        "value": "Print Out",
+        "label": "Reference :",
+        "dbField": "reference",
+        "group": "Ancillary Parts",
+        "groupCell": "P7"
+    },
+    "P17": {
+        "data": "Q17",
+        "value": "208",
+        "label": "Open Carton  Size :",
+        "dbField": "cartonLength",
+        "group": "Single Carton Sizing",
+        "groupCell": "P16"
+    },
+    "P17.W": {
+        "data": "R17",
+        "value": "242",
+        "label": "Open Carton  Size :",
+        "dbField": "cartonWidth",
+        "group": "Single Carton Sizing",
+        "groupCell": "P16"
+    },
+    "P21": {
+        "data": "Q21",
+        "value": "₹ 45,364.68",
+        "label": "Paper Cost :",
+        "dbField": "paperCost",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P22": {
+        "data": "Q22",
+        "value": "₹ 5,850.00",
+        "label": "Printing Charges :",
+        "dbField": "printingCharges",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P23": {
+        "data": "Q23",
+        "value": "₹ 14,152.46",
+        "label": "Varnish/Lamination :",
+        "dbField": "varnish/Lamination",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P24": {
+        "data": "Q24",
+        "value": "₹ 0.00",
+        "label": "Foil Blocks :",
+        "dbField": "foilBlocks",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P25": {
+        "data": "Q25",
+        "value": "₹ 0.00",
+        "label": "Positive :",
+        "dbField": "positive",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P26": {
+        "data": "Q26",
+        "value": "₹ 0.00",
+        "label": "Embossing :",
+        "dbField": "embossing",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P27": {
+        "data": "Q27",
+        "value": "₹ 1,560.00",
+        "label": "Punching :",
+        "dbField": "punching",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P28": {
+        "data": "Q28",
+        "value": "₹ 8,000.00",
+        "label": "BSO Pasting :",
+        "dbField": "bSOPasting",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P29": {
+        "data": "Q29",
+        "value": "₹ 0.00",
+        "label": "LBTO Pasting :",
+        "dbField": "lBTOPasting",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P30": {
+        "data": "Q30",
+        "value": "₹ 2,691.12",
+        "label": "Packing :",
+        "dbField": "packing",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P31": {
+        "data": "Q31",
+        "value": "₹ 0.00",
+        "label": "Transportation :",
+        "dbField": "transportation",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P32": {
+        "data": "Q32",
+        "value": "₹ 77,618.26",
+        "label": "A) Total :",
+        "dbField": "total",
+        "group": "A) Cost Structure :",
+        "groupCell": "P20"
+    },
+    "P35": {
+        "data": "Q35",
+        "value": "₹ 0.00",
+        "label": "Plate Charges :",
+        "dbField": "plateCharges",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P36": {
+        "data": "Q36",
+        "value": "₹ 0.00",
+        "label": "Pantone Inks :",
+        "dbField": "pantoneInks",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P37": {
+        "data": "Q37",
+        "value": "₹ 0.00",
+        "label": "Blanket Charges :",
+        "dbField": "blanketCharges",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P38": {
+        "data": "Q38",
+        "value": "₹ 0.00",
+        "label": "Foil Blocks :",
+        "dbField": "foilBlocks",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P39": {
+        "data": "Q39",
+        "value": "₹ 0.00",
+        "label": "Positive :",
+        "dbField": "positive",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P40": {
+        "data": "Q40",
+        "value": "₹ 0.00",
+        "label": "Emboss Block :",
+        "dbField": "embossBlock",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P41": {
+        "data": "Q41",
+        "value": "₹ 0.00",
+        "label": "Punch :",
+        "dbField": "punch",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P42": {
+        "data": "Q42",
+        "value": "",
+        "label": "Miscellaneous :",
+        "dbField": "miscellaneous",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    },
+    "P43": {
+        "data": "Q43",
+        "value": "₹ 0.00",
+        "label": "B) Total",
+        "dbField": "total",
+        "group": "B) Development Cost :",
+        "groupCell": "P34"
+    }
+}

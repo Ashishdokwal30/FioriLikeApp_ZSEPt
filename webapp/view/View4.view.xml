@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" controllerName="com.sotec.nnt.jsd.controller.View4">
+	<Page title="The Cities Data" showNavButton="true" navButtonPress="onBack">
+	  <ObjectHeader title="{fruits>name}" intro="{fruits>otherName}" number="{fruits>famousFor}" icon="https://img.freepik.com/premium-vector/smart-city-buildings-icon-logo-flat-vector-style-cityscape-illustration_194708-1728.jpg?w=2000">
+         	<ObjectAttribute text="{fruits>Despo}" width="50%"/>
+      </ObjectHeader>
+	</Page>
+</mvc:View>

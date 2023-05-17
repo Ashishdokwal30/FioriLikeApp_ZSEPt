@@ -1,0 +1,42 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+						<!-- <Select items="{/cities}">
+							<items>
+								<core:Item key="{name}" text="{name}">
+								</core:Item>
+							</items>
+						</Select> -->
+ <Table id="idTabCities" mode="SingleSelectMaster" items="{fruits>/cities}" itemPress="onItemPressCities" >
+		<columns>
+			<Column>
+				<header>
+					<Label text="name">
+					</Label>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="famousFor">
+					</Label>
+				</header>
+			</Column>
+			<Column>
+				<header>
+					<Label text="otherName">
+					</Label>
+				</header>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Navigation">
+				<cells>
+					<Text text="{fruits>name}">
+					</Text>
+					<Text text="{fruits>famousFor}">
+					</Text>
+					<Text text="{fruits>otherName}">
+					</Text>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>
